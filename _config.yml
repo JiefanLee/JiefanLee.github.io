@@ -6,29 +6,29 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 徐代龙的技术专栏
-brief-intro: Android and Python Coder
+title: JL BLOG
+brief-intro: CS Lover
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://643435675.github.io" # the base hostname & protocol for your site
+url: "https://JiefanLee.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: #gaohaoyang126
 facebook_username: #gaohaoyang.water
-github_username:  643435675
-email: 643435675@QQ.com
-weibo_username: 3115521wh
-zhihu_username: hll643435675
-linkedIn_username: gaohaoyang
+github_username:  JiefanLee
+email: Jiefan_Li@163.com
+weibo_username: Jason_tornado
+zhihu_username: Tornado
+linkedIn_username: Jiefan Lee
 dribbble_username:
 
-description_footer: 来自徐代龙的个人专栏！
+description_footer: Jiefan Lee's Personal Blog
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
+duoshuo_shortname: JiefanLee
 disqus_shortname: #gaohaoyang
 
 # statistic analysis 统计代码
