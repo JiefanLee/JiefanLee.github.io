@@ -166,8 +166,6 @@ type: page
 <!-- * [有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？ -知乎](https://www.zhihu.com/question/23228162#answer-28057391) -->
 
 
-    <!-- 新建 tab 时，显示 dribbble 上的精选作品。 -->
-
 ## Comments
 
 {% include comments.html %}
