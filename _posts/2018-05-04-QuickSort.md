@@ -50,7 +50,7 @@ public:
         if (i != end && i != begin)  
             Exchange(v[begin], v[++i]);  
         else if (i == end)  
-                Exchange(v[begin], v[i]);  
+            Exchange(v[begin], v[i]);  
         return i;  
     }  
     void Exchange(int &a, int &b){  
@@ -59,5 +59,52 @@ public:
         b = tmp;  
     }  
 };
+```
 
+
+## 另外一种更好理解的方法：
+
+```cpp
+#include<iostream>
+#include<vector>
+using namespace std;
+int a[100];
+void quickSort(int begin, int end)
+{
+	if (begin >= end)
+		return;
+	int i = begin, j = end, key = a[begin], temp;
+	while (i != j)
+	{
+		while (i < j&&a[j] >= key)
+			--j;
+		while (i < j&&a[i] <= key)
+			++i;
+		if (i < j)
+		{
+			temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
+		}
+	}
+	a[begin] = a[i];
+	a[i] = key;
+	quickSort(begin, i - 1);
+	quickSort(i + 1, end);
+}
+
+int main()
+{
+	int n;
+	cout << "please enter the number of the numbers to sort:";
+	cin >> n;
+	for (int i = 0; i < n; ++i)
+		cin >> a[i];
+	quickSort(0, n-1);
+	for (int i = 0; i < n; ++i)
+		cout << a[i] << " ";
+	cout << endl;
+	system("pause");
+	return 0;
+}
 ```
